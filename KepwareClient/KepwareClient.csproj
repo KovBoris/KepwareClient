@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.114.3" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.114.2" />
+    <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.114" />
+    <PackageReference Include="System.Data.SQLite.Linq" Version="1.0.114" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Kepware.ClientAce.OpcClient">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Kepware Technologies\ClientAce\V4.0\Kepware.ClientAce.OpcClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
